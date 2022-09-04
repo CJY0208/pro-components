@@ -1,0 +1,115 @@
+{
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "scripts": {
+    "init": "npx pnpm@6 i",
+    "dev": "dumi dev",
+    "start": "dumi dev",
+    "build": "npm run clean:build && father-build && npm run less2css",
+    "less2css": "npx pnpm@6 run --parallel less2css",
+    "clean:build": "npx rimraf ./packages/*/lib ./packages/*/es",
+    "clean:all": "npm run clean:build && npx rimraf .umi .umi-production docs-dist node_modules/ ./**/node_modules",
+    "docs:build": "dumi build && node ./scripts/afterBuild",
+    "docs:release": "node ./scripts/git/pushToDocsSite",
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss,less,md,json}\"",
+    "eslint": "eslint --cache \"./{packages,docs}/**/*.{js,jsx,ts,tsx}\"",
+    "eslint:error": "npm run eslint -- --quiet",
+    "stylelint": "stylelint \"./{packages,docs}/**/*.{css,less}\"",
+    "publish": "lerna publish from-package -m \"chore: publish\"",
+    "size": "node ./scripts/size/index.js"
+  },
+  "devDependencies": {
+    "@cjy0208/import-cost": "^2.2.1",
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "@cjy0208/tools": "^0.0.0-beta.5",
+    "@types/mockjs": "^1.0.6",
+    "@umijs/fabric": "^2.8.1",
+    "@umijs/plugin-sass": "^1.1.1",
+    "@umijs/test": "^3.0.5",
+    "@umijs/utils": "^3.5.20",
+    "antd": "^4.20.6",
+    "babel-plugin-import": "^1.13.3",
+    "babel-plugin-jsx-css-modules": "^0.1.1",
+    "chalk": "^2.4.2",
+    "dumi": "^1.1.30",
+    "fast-glob": "^3.2.11",
+    "father-build": "^1.17.2",
+    "filesize": "^8.0.3",
+    "gh-pages": "^3.0.0",
+    "husky": "4.x",
+    "kebab-case": "^1.0.1",
+    "lerna": "^4.0.0",
+    "lint-staged": "^10.0.7",
+    "mockjs": "^1.1.0",
+    "ora": "^5.1.0",
+    "particles-bg": "^2.5.5",
+    "prettier": "^1.19.1",
+    "qrcode.react": "^1.0.1",
+    "react": "^16.8.0",
+    "react-activation": "^0.9.7",
+    "react-dom": "^16.8.0",
+    "react-node-key": "^0.2.0",
+    "react-router-dom": "^5.3.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "typescript": "4.7.4",
+    "umi": "^3.5.20",
+    "umi-hd": "^5.0.1",
+    "umi-plugin-tailwindcss": "^3.0.4",
+    "yargs": "^17.2.1"
+  },
+  "resolutions": {
+    "@types/react": "^16.8.0",
+    "antd": "4.20.6",
+    "typescript": "4.7.4"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "subject-case": [
+        0
+      ]
+    }
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write"
+    ],
+    "*.{css,less}": [
+      "stylelint",
+      "prettier --write"
+    ],
+    "*.js?(x)": [
+      "eslint --cache",
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "eslint --cache",
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {
+    "@pansy/react-watermark": "^3.1.4",
+    "@react-spring/web": "^9.3.0",
+    "@use-gesture/react": "^10.1.6",
+    "formini": "0.0.0-beta.12",
+    "monaco": "^1.201704190613.0",
+    "monaco-editor": "^0.21.2",
+    "monaco-editor-webpack-plugin": "^2.1.0",
+    "monaco-themes": "^0.3.3",
+    "react-monaco-editor": "^0.47.0",
+    "react-transition-group": "^4.4.2"
+  }
+}

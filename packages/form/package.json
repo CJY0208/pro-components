@@ -1,0 +1,47 @@
+{
+  "name": "@cjy0208/pro-form",
+  "version": "0.0.0-beta.26",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "types.d.ts",
+  "scripts": {
+    "less2css": "node ./scripts/less2css",
+    "publish": "node ./scripts/publish",
+    "republish": "node ./scripts/republish"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "@babel/runtime": "^7.13.10",
+    "@cjy0208/pro-provider": "^0.0.0-beta.2",
+    "@cjy0208/pro-utils": "^0.0.0-beta.16",
+    "@cjy0208/tools": "^0.0.0-beta.6",
+    "@types/hoist-non-react-statics": "^3.3.1",
+    "dayjs": "^1.10.4",
+    "ahooks": "^3.1.4",
+    "antd": "^4.16.13",
+    "hoist-non-react-statics": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.178",
+    "less-plugin-import-node-modules": "^1.0.0"
+  },
+  "files": [
+    "es",
+    "lib",
+    "types.d.ts"
+  ],
+  "sideEffects": [
+    "*.less"
+  ],
+  "homepage": "https://github.com/CJY0208/pro-components",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CJY0208/pro-components.git"
+  },
+  "maintainers": ["chenjy"],
+  "license": "ISC"
+}

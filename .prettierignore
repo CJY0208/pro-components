@@ -1,0 +1,14 @@
+**/*.svg
+**/*.ejs
+**/*.html
+node_modules
+package.json
+dist
+build
+es
+lib
+docs-dist
+.history
+.umi
+.umi-production
+.umi-test

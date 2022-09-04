@@ -1,0 +1,185 @@
+@import '~@cjy0208/pro-utils/es/style.less';
+@import '~antd/es/button/style/index.less';
+@import '~antd/es/badge/style/index.less';
+@import '~antd/es/switch/style/index.less';
+@import '~antd/es/message/style/index.less';
+@import '~antd/es/space/style/index.less';
+@import '~antd/es/form/style/index.less';
+@import '~antd/es/tooltip/style/index.less';
+@import '~antd/es/table/style/index.less';
+@import '~antd/es/tag/style/index.less';
+@import '~antd/es/pagination/style/index.less';
+@import '~antd/es/alert/style/index.less';
+@import '~antd/es/card/style/index.less';
+@import '~antd/es/popconfirm/style/index.less';
+@import '~antd/es/popover/style/index.less';
+@import '~antd/es/time-picker/style/index.less';
+@import '~antd/es/date-picker/style/index.less';
+@import '~antd/es/input-number/style/index.less';
+@import '~antd/es/input/style/index.less';
+@import '~antd/es/select/style/index.less';
+@import '~antd/es/modal/style/index.less';
+@import '~antd/es/result/style/index.less';
+@import '~antd/es/empty/style/index.less';
+@import '~antd/es/grid/style/index.less';
+@import '~antd/es/dropdown/style/index.less';
+@import '~antd/es/menu/style/index.less';
+// @import '~antd/es/textarea/style/index.less';
+@import '~antd/es/checkbox/style/index.less';
+@import '~antd/es/rate/style/index.less';
+@import '~antd/es/radio/style/index.less';
+@import '~antd/es/cascader/style/index.less';
+
+@pro-form-prefix: ~'f-pro-form';
+
+// .ant-form-vertical {
+//   .@{pro-form-prefix}-item {
+//     .ant-form-item-label {
+//       > label {
+//         display: block;
+//       }
+//     }
+//   }
+// }
+
+.ant-form-vertical {
+  .@{pro-form-prefix}-item {
+    .ant-form-item-label > label[title=' '] {
+      height: 0;
+    }
+  }
+}
+
+// .ant-form {
+//   .@{pro-form-prefix}-item-small {
+//     label {
+//       font-size: 12px;
+//     }
+//   }
+// }
+
+.@{pro-form-prefix} {
+  &-item {
+    // &.ant-form-item {
+    //   margin-bottom: 0;
+    // }
+
+    &-small {
+      // transition: none;
+
+      &.ant-form-item {
+        margin-bottom: 18px;
+      }
+
+      &.ant-form-item-with-help {
+        margin-bottom: 0;
+
+        .ant-form-item-explain {
+          min-height: 18px;
+          font-size: 12px;
+        }
+      }
+
+      .ant-form-item-label {
+        line-height: 1.2;
+        padding-bottom: 6px;
+
+        > label {
+          height: 18px;
+          font-size: 12px;
+        }
+      }
+
+      .ant-btn-sm,
+      .ant-breadcrumb,
+      .ant-menu,
+      .ant-form-item,
+      &.ant-form-item,
+      .ant-badge,
+      .ant-badge-status-text,
+      .ant-tooltip,
+      .ant-pagination,
+      .ant-table,
+      .ant-table.ant-table-middle,
+      .ant-table.ant-table-small,
+      .ant-transfer-list-body {
+        font-size: 12px;
+      }
+
+      .ant-checkbox-inner,
+      .ant-radio {
+        transform: scale(0.9);
+      }
+
+      .ant-transfer-list-content-item {
+        min-height: 26px;
+        padding: 4px 8px;
+      }
+
+      .ant-transfer-list-header {
+        height: 32px;
+        padding: 6px 10px 8px;
+      }
+
+      .ant-transfer-list-body-search-wrapper {
+        padding: 10px;
+      }
+
+      .ant-form & label {
+        font-size: 12px;
+      }
+
+      .anticon {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-grid-field {
+    overflow: hidden;
+    // background: #fff;
+
+    > .kl-grid {
+      margin: 0 -16px;
+    }
+    .kl-grid-item {
+      overflow: hidden;
+    }
+
+    .kl-grid-item-content {
+      padding: 0 16px;
+    }
+
+    .ant-form-item {
+      width: 100%;
+    }
+
+    .ant-space,
+    .ant-form-item-control-input-content > div {
+      width: 100%;
+    }
+  }
+
+  &-field {
+    .ant-form-item-control-input-content {
+      word-break: break-all;
+    }
+
+    &-copy-button {
+      flex-shrink: 0;
+      margin-right: 2px;
+    }
+
+    .ant-transfer {
+      width: 100%;
+    }
+
+    .ant-transfer-list {
+      flex: 1;
+    }
+
+    // &-content {
+    //   display: inline-block;
+    // }
+  }
+}

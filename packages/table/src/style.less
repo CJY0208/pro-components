@@ -1,0 +1,340 @@
+@import '~@cjy0208/pro-utils/es/style.less';
+@import '~@cjy0208/pro-form/es/style.less';
+@import '~antd/es/button/style/index.less';
+@import '~antd/es/badge/style/index.less';
+@import '~antd/es/switch/style/index.less';
+@import '~antd/es/message/style/index.less';
+@import '~antd/es/space/style/index.less';
+@import '~antd/es/form/style/index.less';
+@import '~antd/es/tooltip/style/index.less';
+@import '~antd/es/table/style/index.less';
+@import '~antd/es/tag/style/index.less';
+@import '~antd/es/pagination/style/index.less';
+@import '~antd/es/alert/style/index.less';
+@import '~antd/es/card/style/index.less';
+@import '~antd/es/popconfirm/style/index.less';
+@import '~antd/es/popover/style/index.less';
+@import '~antd/es/time-picker/style/index.less';
+@import '~antd/es/date-picker/style/index.less';
+@import '~antd/es/input-number/style/index.less';
+@import '~antd/es/input/style/index.less';
+@import '~antd/es/select/style/index.less';
+@import '~antd/es/modal/style/index.less';
+@import '~antd/es/result/style/index.less';
+@import '~antd/es/empty/style/index.less';
+@import '~antd/es/grid/style/index.less';
+@import '~antd/es/dropdown/style/index.less';
+@import '~antd/es/menu/style/index.less';
+// @import '~antd/es/textarea/style/index.less';
+@import '~antd/es/checkbox/style/index.less';
+@import '~antd/es/rate/style/index.less';
+@import '~antd/es/radio/style/index.less';
+@import '~antd/es/cascader/style/index.less';
+@import '~antd/es/descriptions/style/index.less';
+
+@pro-table-prefix: ~'f-pro-table';
+
+.@{pro-table-prefix}-mini {
+  .@{pro-table-prefix} {
+    &-query {
+      padding: 12px 16px 4px;
+    }
+    &-title {
+      font-size: 14px;
+    }
+
+    &-alert {
+      margin-bottom: 10px;
+      .ant-alert {
+        padding: 6px 10px;
+        font-size: 12px;
+      }
+    }
+
+    &-toolbar {
+      padding: 10px 0;
+    }
+
+    &-main {
+      padding: 0 16px 12px;
+    }
+
+    &-table-sticky .ant-pagination {
+      padding: 12px 0;
+    }
+  }
+
+  .ant-btn-sm,
+  .ant-breadcrumb,
+  .ant-menu,
+  .ant-form-item,
+  .ant-badge,
+  .ant-badge-status-text,
+  .ant-tooltip,
+  .ant-pagination,
+  .ant-table,
+  .ant-table.ant-table-middle,
+  .ant-table.ant-table-small,
+  .ant-transfer-list-body {
+    font-size: 12px;
+  }
+
+  .ant-checkbox-inner,
+  .ant-radio {
+    transform: scale(0.9);
+  }
+
+  .ant-transfer-list-content-item {
+    min-height: 26px;
+    padding: 4px 8px;
+  }
+
+  .ant-transfer-list-header {
+    height: 32px;
+    padding: 6px 10px 8px;
+  }
+
+  .ant-transfer-list-body-search-wrapper {
+    padding: 10px;
+  }
+
+  .ant-form & label {
+    font-size: 12px;
+  }
+
+  .anticon {
+    font-size: 14px;
+  }
+}
+
+.f-pro-table-wrapper-fullscreen .f-pro-table-body .@{pro-table-prefix}-modal {
+  &-grey-body {
+    .ant-modal-body {
+      background: #f5f5f5;
+    }
+  }
+
+  .ant-card-head::before {
+    display: block;
+  }
+}
+
+.@{pro-table-prefix}-wrapper {
+  position: relative;
+  .ant-btn-two-chinese-chars > .ant-btn-loading-icon {
+    margin-right: 0;
+  }
+
+  &-fullscreen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    overflow: auto;
+    background: #f5f5f5;
+
+    .@{pro-table-prefix}-body {
+      padding: 24px;
+    }
+
+    .@{pro-table-prefix}-small.@{pro-table-prefix}-body {
+      padding: 16px;
+    }
+  }
+}
+
+.@{pro-table-prefix}-scroll-block {
+  overflow: hidden !important;
+}
+
+.@{pro-table-prefix}-body {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.@{pro-table-prefix}-query {
+  padding: 24px 24px 8px;
+  background: #fff;
+
+  &-bordered {
+    border: solid 1px #f2f2f2;
+  }
+
+  &-horizontal {
+    padding-bottom: 0;
+  }
+}
+
+.@{pro-table-prefix}-grid-field {
+  overflow: hidden;
+  background: #fff;
+
+  > .kl-grid {
+    margin: 0 -16px;
+  }
+  .kl-grid-item {
+    overflow: hidden;
+  }
+
+  .kl-grid-item-content {
+    padding: 0 16px;
+  }
+
+  .ant-form-item {
+    width: 100%;
+  }
+
+  .ant-space,
+  .ant-form-item-control-input-content > div {
+    width: 100%;
+  }
+}
+
+.@{pro-table-prefix}-query-form-actions {
+  width: 100%;
+  justify-content: flex-end;
+  overflow: hidden;
+  // text-align: right;
+}
+
+.@{pro-table-prefix}-extra {
+  background: #fff;
+}
+
+.@{pro-table-prefix}-main {
+  position: relative;
+  padding: 0 24px 24px;
+  background: #fff;
+
+  &-bordered {
+    border: solid 1px #f2f2f2;
+  }
+
+  &-no-toolbar {
+    padding-top: 24px;
+  }
+}
+
+.@{pro-table-prefix}-toolbar {
+  position: relative;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+
+  & > .ant-space {
+    width: auto;
+  }
+}
+
+.@{pro-table-prefix}-left {
+  background: #fff;
+}
+
+.@{pro-table-prefix}-title {
+  font-size: 16px;
+}
+
+.@{pro-table-prefix}-right {
+  background: #fff;
+}
+
+.@{pro-table-prefix}-actions {
+  // padding: 12px 0;
+  background: #fff;
+}
+
+.@{pro-table-prefix}-settings {
+  background: #fff;
+}
+
+.@{pro-table-prefix}-alert {
+  margin-bottom: 16px;
+
+  .@{pro-table-prefix}-alert-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.@{pro-table-prefix}-table {
+  background: #fff;
+
+  table tr th.ant-table-selection-column,
+  table tr td.ant-table-selection-column {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .ant-checkbox-checked .ant-checkbox-inner::after {
+    transition: none;
+  }
+
+  .ant-checkbox-checked::after {
+    animation: none;
+  }
+
+  .ant-table-sticky-scroll {
+    display: none;
+  }
+
+  &-sticky {
+    .ant-pagination {
+      margin: 0;
+      padding: 16px 0;
+      border-top: solid 1px #f2f2f2;
+      position: sticky;
+      bottom: 0;
+      background: #fff;
+      z-index: 100;
+
+      .fake-scrollBar {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        transform: translateY(-100%);
+        overflow-y: hidden;
+        overflow-x: auto;
+        background-color: #fff;
+        border-top: solid 1px #f2f2f2;
+        border-bottom: solid 1px #f2f2f2;
+
+        > div {
+          height: 1px;
+        }
+      }
+    }
+  }
+
+  .ant-switch-inner {
+    white-space: nowrap;
+  }
+
+  .ant-select {
+    min-width: 120px;
+  }
+
+  .ant-table-cell-ellipsis {
+    // .ant-space {
+    //   max-width: 100%;
+    // }
+    .ant-form-item-control-input-content {
+      display: flex;
+    }
+
+    .f-pro-utils-ellipsis-tooltip {
+      display: inline-block;
+      flex: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      word-break: keep-all;
+    }
+  }
+}

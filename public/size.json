@@ -1,0 +1,59 @@
+{
+  "size": [
+    {
+      "fileName": "size",
+      "name": "@cjy0208/pro-components",
+      "line": 1,
+      "string": "require('@cjy0208/pro-components')",
+      "size": "1.3M",
+      "gzip": "376.9k",
+      "rawSize": 1293667,
+      "rawGzip": 376862,
+      "label": "1.3M (gzipped: 376.9k)"
+    },
+    {
+      "fileName": "size",
+      "name": "@cjy0208/pro-table",
+      "line": 3,
+      "string": "require('@cjy0208/pro-table')",
+      "size": "1.3M",
+      "gzip": "376.3k",
+      "rawSize": 1292317,
+      "rawGzip": 376264,
+      "label": "1.3M (gzipped: 376.3k)"
+    },
+    {
+      "fileName": "size",
+      "name": "@cjy0208/pro-form",
+      "line": 2,
+      "string": "require('@cjy0208/pro-form')",
+      "size": "1.1M",
+      "gzip": "310.4k",
+      "rawSize": 1062084,
+      "rawGzip": 310438,
+      "label": "1.1M (gzipped: 310.4k)"
+    },
+    {
+      "fileName": "size",
+      "name": "@cjy0208/pro-utils",
+      "line": 4,
+      "string": "require('@cjy0208/pro-utils')",
+      "size": "475.9k",
+      "gzip": "151.8k",
+      "rawSize": 475947,
+      "rawGzip": 151814,
+      "label": "475.9k (gzipped: 151.8k)"
+    },
+    {
+      "fileName": "size",
+      "name": "@cjy0208/pro-provider",
+      "line": 5,
+      "string": "require('@cjy0208/pro-provider')",
+      "size": "142k",
+      "gzip": "43.6k",
+      "rawSize": 142009,
+      "rawGzip": 43573,
+      "label": "142k (gzipped: 43.6k)"
+    }
+  ]
+}
