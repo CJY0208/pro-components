@@ -62,6 +62,14 @@
     "umi-plugin-tailwindcss": "^3.0.4",
     "yargs": "^17.2.1"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/CJY0208/pro-components",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CJY0208/pro-components.git"
+  },
   "resolutions": {
     "@types/react": "^16.8.0",
     "antd": "4.20.6",
