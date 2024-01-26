@@ -1,3 +1,5 @@
+# ！！！！！！ 此处不再维护，迁移至 [https://fexd-team.github.io/pro-components](https://github.com/fexd-team/pro-components) ！！！！！！
+
 # ProComponents
 
 [![size](https://img.shields.io/bundlephobia/minzip/@cjy0208/pro-components@latest.svg)](https://bundlephobia.com/result?p=@cjy0208/pro-components@latest) [![dm](https://img.shields.io/npm/dm/@cjy0208/pro-components.svg)](https://github.com/CJY0208/@cjy0208/pro-components) ![](https://visitor-badge.glitch.me/badge?page_id=cjy0208.pro-components)
